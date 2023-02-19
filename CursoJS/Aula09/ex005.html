@@ -17,10 +17,51 @@
   <h1>Iniciando estudos DOM</h1>
   <p>Aqui vai o resultado</p>
   <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-  <div name="texto">Clique em mim</div>
+  <div id="msg" name="texto" class="click">Clique em mim</div>
+  <div id="segunda">Segunda Div</div>
   <script>
-    var d = window.document.getElementsByName('texto')
-    d.style.background = 'green'
+    /*
+    //Selecionador Marcas/Tags
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write(p1.innerHTML)
+    */
+    
+    /*
+    //Selecionador ID
+    var block = window.document.getElementById('msg')
+    block.style.color = 'blue'
+    */
+    
+    /*
+    //Selecionador Nome
+    var d = window.document.getElementsByName('texto')[0]
+    d.style.background = "green"
+    */
+    
+    /*
+    //Selecionador Class
+    var d = window.document.getElementsByClassName('click')[0]
+    d.innerText = 'Olá, Mundo!'
+    *_
+    
+    /* 
+    //Selecionador Seletor
+    //Selecionando Class
+    var block = window.document.querySelectorAll('div.click')[0]
+    block.style.color = 'blue'
+    
+    //Selecionando Id
+    var s2 = window.document.querySelector('div#segunda')
+    s2.style.background = 'red'
+    
+    //Selecionando tag
+    var tag = window.document.querySelector('h1')
+    tag.style.background = 'black'
+    
+    //Selecionando tags
+    var tags = window.document.querySelectorAll('p')[1]
+    tags.style.color = 'green'
+    */
   </script>
 </body>
 </html>
