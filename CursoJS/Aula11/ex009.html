@@ -7,6 +7,7 @@
   <title>Pais</title>
 </head>
 <body>
+  <p>Em qual país você está agora?</p>
   <input type="text" id="pais">
   <input type="button" value="Enviar" onclick="verificar()"/>
   <div id="res"> </div>
@@ -15,10 +16,12 @@
       var textpais = window.document.querySelector('input#pais')
       var res = window.document.querySelector('div#res')
       var pais = textpais.value
+      res.innerHTML = `Vivendo em ${pais}`
+      
       if (pais == 'Brasil') {
-        res.innerHTML = 'Você é brasileiro(a)'
+        res.innerHTML += '<p>Você é brasileiro(a)</p>'
       } else {
-        res.innerHTML = 'Você é estrangeiro(a)'
+        res.innerHTML += '<p>Você é estrangeiro(a)</p>'
       }
     }
   </script>
