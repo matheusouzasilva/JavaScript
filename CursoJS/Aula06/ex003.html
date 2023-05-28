@@ -24,10 +24,74 @@
   <h1>Olá, Mundo!</h1>
   <p>Me livrei da maldição.</p>
   <script>
+    // Antes
+    /*
+    var n1 = window.prompt('Digite um número: ')
+    var n2 = window.prompt('Digite outro número: ')
+    var s = n1 + n2
+    window.alert('Resultado ' + s)
+    */
+    
+    // Depois usando Number.parseInt()
+    /*
+    var n1 = Number.parseInt(window.prompt('Digite um número: '))
+    var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+    var s = n1 + n2
+    window.alert('Resultado ' + s)
+    */
+    
+    // Depois usando Number.parseFloat()
+    /*
+    var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+    var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+    var s = n1 + n2
+    window.alert('Resultado ' + s)
+    */
+    
+    // Depois usando Number()
+    /*
     var n1 = Number(window.prompt('Digite um número: '))
     var n2 = Number(window.prompt('Digite outro número: '))
     var s = n1 + n2
-    window.alert(`A soma de ${n1} e ${n2} é igual a ${s}`)
+    window.alert('Resultado ' + s)
+    */
+    
+    // Antes com a concatenação
+    /*
+    var s = 'JavaScript'
+    window.alert('Estão gostando de s?')
+    */
+    
+    // Depois com a concatenação 
+    /*
+    var s = 'JavaScript';
+    window.alert('Estão gostando de ' + s + '?');
+    */
+    
+    // Mais concatenação
+    /*
+    var nome = 'Matheus';
+    var idade = '15';
+    var nota = '8.5';
+    window.alert('Olá, ' + nome + ', você tem ' + idade + ' anos e sua nota é ' + nota);
+    */
+    
+    // Depois
+    var nome = 'Matheus';
+    var idade = '15';
+    var nota = '8.5';
+    window.alert(`Olá ${nome}, você tem ${idade} anos e sua nota é ${nota}`);
+    
+    // Em Resumo
+    var s = 'JavaScript';
+    // Não faz interpolação
+    'Eu estou aprendendo s';
+    
+    // Usa concatenação
+    'Eu estou aprendendo ' + s;
+    
+    // Usa template string
+    `Eu estou aprendendo ${s}`;
   </script>
 </body>
 </html>
